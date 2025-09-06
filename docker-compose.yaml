@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:16          # PostgreSQL image version
+    container_name: my_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: myuser        # DB username
+      POSTGRES_PASSWORD: mypass    # DB password
+      POSTGRES_DB: mydb            # default database
+    ports:
+      - "5431:5432"                # expose PostgreSQL port
+    volumes:
+      - postgres_data:/var/lib/postgresql/data  # persist DB data
+
+volumes:
+  postgres_data:
