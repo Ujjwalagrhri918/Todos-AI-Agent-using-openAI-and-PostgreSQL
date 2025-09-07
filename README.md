@@ -71,6 +71,8 @@ npx drizzle-kit push
 node index.js
 ```
 
+## Demo Interaction with the Agent
+
 
 <img width="2349" height="215" alt="image" src="https://github.com/user-attachments/assets/535016b0-5306-406a-91eb-d1bc5ce6d892" />
 
