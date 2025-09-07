@@ -8,6 +8,13 @@
       "when": 1757159146232,
       "tag": "0000_swift_nextwave",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1757165626466,
+      "tag": "0001_exotic_stature",
+      "breakpoints": true
     }
   ]
 }
