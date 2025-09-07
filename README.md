@@ -1,6 +1,6 @@
 # Todos-AI-Agent-using-openAI-and-PostgreSQL
 
-##📝Todo Agent
+## 📝Todo Agent
 
 An AI-powered Todo Manager that combines a PostgreSQL + Drizzle ORM backend with an Agentic AI assistant.
 The AI assistant uses structured reasoning (PLAN → ACTION → OBSERVATION → OUTPUT) to manage todos intelligently.
@@ -37,23 +37,67 @@ The AI assistant uses structured reasoning (PLAN → ACTION → OBSERVATION → 
 - **Migration Tooling**: `drizzle-kit` for schema versioning and reproducible migrations  
 
 ---
+---
+
+## ⚡ How to Run
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/Ujjwalagrhri918/Todos-AI-Agent-using-openAI-and-PostgreSQL.git
+cd Todos-AI-Agent-using-openAI-and-PostgreSQL
+```
+### 2. Install all the dependencies 
+```bash
+npm install
+```
+### 3. Set up the .env file 
+```bash
+OPENAI_API_KEY=your-openai-key-here
+DATABASE_URL= postgresql://myuser:mypass@localhost:5431/mydb
+```
+### 4. Make sure you have Docker + Docker Compose installed.
+```bash
+docker compose up -d
+```
+
+### 5. Use drizzle-kit to apply schema migrations:
+```bash
+npx drizzle-kit generate
+npx drizzle-kit push
+```
+
+### 6. Start the agent 
+```bash
+node index.js
+```
 
 
 <img width="2349" height="215" alt="image" src="https://github.com/user-attachments/assets/535016b0-5306-406a-91eb-d1bc5ce6d892" />
-<img width="2347" height="248" alt="image" src="https://github.com/user-attachments/assets/83017db1-1708-4184-b3f0-fbddb84e7802" />
----
-<img width="2340" height="386" alt="image" src="https://github.com/user-attachments/assets/7a32d87b-13aa-4deb-9b1a-06706c42ca22" />
-<img width="2347" height="308" alt="image" src="https://github.com/user-attachments/assets/e580e349-bcd5-4f2b-9547-62a55cd6de74" />
----
-<img width="2331" height="346" alt="image" src="https://github.com/user-attachments/assets/b454c67e-12a8-474d-b500-3c240bb26a5c" />
-<img width="2350" height="324" alt="image" src="https://github.com/user-attachments/assets/10067f08-df7e-4f6f-8d2e-8bb3ea507252" />
----
-<img width="2334" height="182" alt="image" src="https://github.com/user-attachments/assets/9d17ed69-5f91-468d-b32b-e914c549221c" />
----
-<img width="2326" height="183" alt="image" src="https://github.com/user-attachments/assets/2a378cfd-75b2-4b06-ab40-e9c8b1a6a5ae" />
-<img width="2345" height="240" alt="image" src="https://github.com/user-attachments/assets/444ff342-2615-4152-8382-2064cf95a0b6" />
----
 
+<img width="2347" height="248" alt="image" src="https://github.com/user-attachments/assets/83017db1-1708-4184-b3f0-fbddb84e7802" />
+<hr>
+
+<img width="2340" height="386" alt="image" src="https://github.com/user-attachments/assets/7a32d87b-13aa-4deb-9b1a-06706c42ca22" />
+
+<img width="2347" height="308" alt="image" src="https://github.com/user-attachments/assets/e580e349-bcd5-4f2b-9547-62a55cd6de74" />
+<hr>
+
+<img width="2331" height="346" alt="image" src="https://github.com/user-attachments/assets/b454c67e-12a8-474d-b500-3c240bb26a5c" />
+
+<img width="2350" height="324" alt="image" src="https://github.com/user-attachments/assets/10067f08-df7e-4f6f-8d2e-8bb3ea507252" />
+
+<hr>
+<img width="2334" height="182" alt="image" src="https://github.com/user-attachments/assets/9d17ed69-5f91-468d-b32b-e914c549221c" />
+
+<hr>
+<img width="2326" height="183" alt="image" src="https://github.com/user-attachments/assets/2a378cfd-75b2-4b06-ab40-e9c8b1a6a5ae" />
+
+<img width="2345" height="240" alt="image" src="https://github.com/user-attachments/assets/444ff342-2615-4152-8382-2064cf95a0b6" />
+
+<hr>
+
+
+Made with ❤️ by Ujjwal
 
 
 
